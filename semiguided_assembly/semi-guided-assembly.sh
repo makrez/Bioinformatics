@@ -4,17 +4,24 @@
 #   Semi-guided Assembly      #
 ####-----------------------####
 
+# Script for semi-guided Assembly. Given a reference fasta file and shotgun sequencing data
+# this script maps the shotgun sequencing data to the reference, extracts the reads that are
+# mapped to the reference and performs a de novo assembly with these reads.
+# Usage semi-guided-assembly.sh -s=samplelist.txt -r=reference.fasta -o=[outstring] -t=[threads]
+#
+# the -o option is used to give the files a unique identifier.
 # This scripts assumes the following folder sturcture and data:
 # ./samplelist.txt
 # ./sample1/sample1.FPs.fastq.gz
 # ./sample1/sample1.RPs.fastq.gz
 # ./sample2/sample2.FPs.fastq.gz
 # ./sample2/sample2.RPs.fastq.gz
+# etc.
 # ./reference.fasta
 #
-# list of samples in samplelist.txt (e.g. sample1 \n sample2 \n ...)
-
-# Program Paths (need to be adjusted). samtools, bwa, spades etc. are in PATH.
+# one sample name per line in samplelist.txt (e.g. sample1 \n sample2 \n ...)
+#
+# Program Paths need to be adjusted. samtools, bwa, spades etc. are in PATH.
 
 BWA=bwa
 PICARD=~/Programs/bioinformatics/picard.jar
