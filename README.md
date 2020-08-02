@@ -6,7 +6,7 @@ Collection of scripts used for bioinformatics analyses.
 
 Python program that let's the user easily extract fasta sequences based on features.
 
-Requires python3 and the following packages: [biopython]("https://www.biopython.org") and [fire]("https://github.com/google/python-fire").
+Requires python3 and the following packages: [biopython](https://www.biopython.org) and [fire](https://github.com/google/python-fire).
 
 Example usage:
 
