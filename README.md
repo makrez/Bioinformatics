@@ -2,7 +2,7 @@
 
 Collection of scripts used for bioinformatics analyses.
 
-## extract_fasta_from_Genbank
+## extract_fasta_from_genbank
 
 Python program that let's the user easily extract fasta sequences based on features.
 
